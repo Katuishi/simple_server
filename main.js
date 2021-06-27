@@ -14,6 +14,10 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 app.get('/',(req,res)=>{
+    res.send('salami induveca!')
+})
+
+app.get('/test',(req,res)=>{
     res.status(200).json({'message':'success'})
 })
 
