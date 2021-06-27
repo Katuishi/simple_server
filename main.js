@@ -13,6 +13,6 @@ app.get('/',(req,res)=>{
     res.status(200).json(req.body)
 })
 
-app.listen(3000,()=>{
+app.listen(80,()=>{
     console.log('On Start!')
 })
