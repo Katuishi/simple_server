@@ -4,10 +4,10 @@ const helmet =  require('helmet')
 const cors = require('cors')
 const dotenv = require('dotenv')
 const ratelimit = require('express-rate-limit')
-dotenv.config()
+dotenv.config({path:'./'})
 
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = 80
 const limit = ratelimit({
     windowMs: 50 * 60 * 1000, // 15 minutes
     max: 500 // limit each IP to 100 requests per windowMs
