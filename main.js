@@ -7,7 +7,7 @@ const ratelimit = require('express-rate-limit')
 dotenv.config({path:'./'})
 
 const app = express()
-const PORT = 80
+const PORT = 443
 const limit = ratelimit({
     windowMs: 50 * 60 * 1000, // 15 minutes
     max: 500 // limit each IP to 100 requests per windowMs
