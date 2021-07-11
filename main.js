@@ -4,7 +4,7 @@ const helmet =  require('helmet')
 const cors = require('cors')
 const dotenv = require('dotenv')
 const ratelimit = require('express-rate-limit')
-dotenv.config({path:'./'})
+dotenv.config()
 
 const app = express()
 const PORT = process.env.PORT | 3000
